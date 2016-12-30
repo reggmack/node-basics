@@ -1,4 +1,18 @@
 var profile = require("./profile.js");
-profile.get("reggiemack");
+var users = process.argv.slice(2);
+//console.dir(process.argv);
 
-// var username = "reggiemack";
+
+//var users = ["chalkers", "reggiemack"];
+
+/*profile.get("reggiemack");
+profile.get("joykesten2");*/
+
+/*users.forEach(function(username) {
+   profile.get(username) 
+});
+*/
+
+users.forEach(profile.get) 
+
+
